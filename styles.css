@@ -1,3 +1,6 @@
+body{
+    margin-bottom: 100px;
+}
 .footer-custom
 {
     background: black;
@@ -12,7 +15,24 @@
 }
 .pokedex .part1 
 {
-    
+    border-right: 1px solid #333;
+}
+.pokedex .part1 .elements
+{
+   width: 100%;
+}
+.pokedex .part1 .elements .circle
+{
+    background-color: rgb(255, 255, 255);
+    width: 90px;
+    height: 90px;
+}
+.pokedex .part1 .elements .circle div
+{
+    background-color: rgb(39, 195, 223);
+    width: 75px;
+    height: 75px;
+    border: 1px solid black;
 }
 .pokedex .part1 .pantalla {
     background: #8b8b88;
@@ -26,6 +46,75 @@
 }
 .pokedex .part2 .pantalla {
     background: #032D29;
-    width: 25em;
-    height: 15em;
+    width: 28em;
+    height: 13em;
+    margin-top: 100px;
+}
+.part2 .Estadisticas 
+{
+    border-right: 2px solid white;
+}
+.part2 .glass2 table .stat
+{
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+.pokedex .parte3 
+{
+    border-right: 1px solid #333;
+}
+.pokedex .parte3 .directional-pad div
+{
+    background: #5E9248;
+    width: 190px;
+    height: 70px;
+}
+.pokedex .parte3 .directional-pad img
+{
+   position: relative;
+    width: 140px;
+    height: 140px;
+    margin-top: -40px;
+}
+.pokedex .parte3 .element .circulo
+{
+    background-color: black;
+    width: 60px;
+    height: 60px;
+}
+.pokedex .parte3 .element .subelemnt div
+{
+    background-color: #FFFFFF;
+    width: 130px;
+    height: 10px;
+}
+.pokedex .parte3 .element .subelemnt  div:nth-child(2)
+{
+    background-color: #e24f0b;
+
+}
+.pokedex .part4 .elemtns .buttoms .bp1 div
+{
+    width: 60px;
+    height: 40px;
+    background: #31A6F1;
+    border: 1px solid #333;
+}
+.pokedex .part4 .elements2 .leds div
+{
+    background-color: #FFFFFF;
+    width: 130px;
+    height: 10px;
+}
+.pokedex .part4 .elements2 .leds div:nth-child(2)
+{
+    background-color: yellow;
+ 
+}
+.pokedex .part4 .elements2 .buttoms div
+{
+    background-color: #FFFFFF;
+    width: 55px;
+    height: 55px;
+    border: 2px solid #333;
 }

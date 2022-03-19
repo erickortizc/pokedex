@@ -9,14 +9,21 @@
     <title>Pokedex</title>
    
 </head>
-<body class="container" >
+<body class="container " >
     <h1>Pokedex Launch X</h1>
-    <input type="text" placeholder="Nombre del pokemon." id="pokeName" name="pokeName"><br>
-    <button onclick="fetchPokemon()">Cambiar Pokemon</button>
+    <input class="mt-2" type="text" placeholder="Nombre del pokemon." id="pokeName" name="pokeName"><br>
+    <button class="mt-2 mb-2 btn btn-danger" onclick="fetchPokemon()">Cambiar Pokemon</button>
     <main class="pokedex ">
-        <section class="part1 d-flex align-items-center justify-content-center">
+        <section class="part1 d-flex align-items-center justify-content-center flex-column">
+            <div class="elements  ps-5 pt-2">
+                <div class="circle rounded-circle d-flex align-items-center justify-content-center" >
+                    <div class=" rounded-circle"> </div>
+                </div>
+
+                
+            </div>
             <div class="pantalla d-flex align-items-center justify-content-center rounded-2 mt-3">
-                <div class="glass">
+                <div class="glass rounded">
                     <div class="datapres d-flex flex-column ps-2 pt-2 fs-5">
                         <div>
                             <label for="" class="fw-bolder">Nombre: </label>
@@ -33,10 +40,10 @@
                 </div>
             </div>
         </section>
-        <section class="part2 d-flex align-items-center justify-content-center">
-            <div class="pantalla d-flex align-items-center justify-content-center rounded-2 mt-3">
-                <div class="glass2">
-                    <div class="Estadisticas">
+        <section class="part2 d-flex align-items-center justify-content-center ">
+            <div class="pantalla d-flex align-items-center justify-content-center rounded-2 ">
+                <div class="glass2 d-flex flex-row">
+                    <div class="Estadisticas pe-2">
                         <table class="text-white">
                             <tr class="stat ">
                                 <th>Estadistica</th>
@@ -44,42 +51,34 @@
                             </tr>
                             <tr class="point">
                                 <th>Hp:</th>
-                                <th><label for="" id="pokemonhp"></label></th>
+                                <th class="text-center"><label for="" id="pokemonhp"></label></th>
                             </tr>
                             <tr class="points">
                                 <th>Ataque:</th>
-                                <th><label for="" id="pokemonAttach"></label></th>
+                                <th class="text-center"><label for="" id="pokemonAttach"></label></th>
                             </tr>
                             <tr class="points">
                                 <th>Defensa:</th>
-                                <th><label for="" id="pokemondefense"></label></th>
+                                <th class="text-center"><label for="" id="pokemondefense"></label></th>
                             </tr>
                             <tr class="points">
                                 <th>Ataque especial:</th>
-                                <th><label for="" id="pokemonspatt"></label></th>
+                                <th class="text-center"><label for="" id="pokemonspatt"></label></th>
                             </tr>
                             <tr class="points">
                                 <th>Defense especial:</th>
-                                <th><label for="" id="pokemonspdef"></label></th>
+                                <th class="text-center"><label for="" id="pokemonspdef"></label></th>
                             </tr>
                             <tr class="points">
                                 <th>Velocidad</th>
-                                <th><label for="" id="pokemonspeed"></label></th>
+                                <th class="text-center"><label for="" id="pokemonspeed"></label></th>
                             </tr>
                         </table>
                     </div>
-            </div>
-        </section>
-        <section class="parte3">
-            hola
-        </section>
-        <section class="part4">
-            <div class="pantalla d-flex align-items-center justify-content-center rounded-2 mt-3">
-                <div class="glass2">
-                    <div class="Estadisticas">
+                    <div class="mov-esp ms-2">
                         <table class="text-white">
                             <tr class="stat ">
-                                <th>Movimientos espciales:</th>
+                                <th>Movimientos especiales</th>
                             
                             </tr>
                             <tr class="point">
@@ -94,25 +93,64 @@
                     </div>
             </div>
         </section>
+        <section class="parte3 container-fluid mt-2 ps-5 pt-2">
+            <div class="element  d-flex flex-row">
+                <div class="circulo rounded-circle"></div>
+                <div class="subelemnt d-flex align-items-center">
+                    <div class="mid-circulo rounded-pill m-2"> </div>
+                    <div class="mid-circulo rounded-pill m-2"> </div>
+                </div>
+            
+            </div>
+           <div class="directional-pad d-flex justify-content-around">
+                <div class="cuadro rounded mt-2">
+
+                </div>  
+                <img class="mb-4" src="directional-pad.png" alt="">
+            </div>
+           
+        </section>
+        <section class="part4">
+            <div class="elemtns d-flex align-items-center justify-content-center rounded-2 mt-1">
+                <div class="buttoms d-flex flex-column">
+                    <div class="bp1 d-flex flex-row">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="bp1 d-flex flex-row">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    
+                    
+                </div>
+                    
+            </div>
+            <div class="elements2">
+                <div class="leds d-flex justify-content-end pe-5">
+                    <div class="mid-circulo rounded-pill m-2"> </div>
+                    <div class="mid-circulo rounded-pill m-2"> </div>
+                </div>
+                <div class="buttoms ps-5 d-flex justify-content-start">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </section>
     </main>
-   
-    
-    <br>
-    
-    <label for="">Estadisticas</label> <br>
-    <label for="">Hp: </label>  <br>
-    <label for="">: </label> <label for="" id="pokemonAttach"></label> <br>
-    <label for="">: </label> <label for="" id=""></label> <br>
-    <label for="">: </label> <label for="" id=""></label> <br>
-    <label for=""> </label> <label for="" id=""></label> <br>
-    <label for="">: </label> <label for="" id=""></label> <br>
-    <br>
-    <label for="">Movimientos mas conocidos:</label> <br>
-    
-    <br>
+   <br>
+   <br>
     
 </body>
-<footer class="fixed-bottom d-flex justify-content-center py-2 footer-custom">
+<footer class="fixed-bottom d-flex justify-content-center py-2 footer-custom mt-6">
         <span class="fs-4 "> Todos los derechos resevervados | <b class="text-uppercase">Erick Ortiz </b>  </span>
     <script src="pokedexlaunchx.js"></script>
 </footer>
